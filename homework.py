@@ -28,7 +28,8 @@ with sqlite3.connect("cars.db") as conn:
 
     print("updated: ")
     for r in c.fetchall():
-        print(r[0], r[1], r[2])
+        print(r)
+        #print(r[0], r[1], r[2])
 
     c.execute("SELECT * from inventory WHERE Make='Ford'")
 
